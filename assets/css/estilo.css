@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.texto-destaque{
+    width: 18px;
+    font-weight: bold;
+    color: rgb(90, 48, 204);
+    padding-right: 2px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+img{
+    height:250px;
+    width: 430px;
+}
+
+main > div{
+    padding-left: 18px;
+    padding-top: 18px;
+}
+
+@media (max-width: 500px){
+    main{
+        flex-wrap: wrap;
+    }
+    img{
+        height:230px;
+        width: 400px;
+        border: solid black 3px;
+    }
+    
+    @media(max-width: 93px){
+    img{
+        height:80px;
+        width: 100px;
+        border: solid black 3px;
+    }
+    p{
+        font-size: 10px;
+        margin: 10px;
+    }
+    
